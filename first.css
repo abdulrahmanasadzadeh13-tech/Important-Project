@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: rgb(86, 86, 235);
+}
+.showcase {
+    background-image: url('../imgs/showcase.jpg');
+    background-size: 100%;
+    height: 100vh;
+    position: relative;
+}
+.showcase::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.go-up div{
+    background-color: var(--bg-color);
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+.showcase .header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+.showcase .header .logo h1 a{
+    text-decoration: none;
+    color: white;
+}
+.showcase .header .logo h1 a:hover{
+    color: var(--bg-color);
+}
+.showcase .header .logo h1 a span{
+    color: var(--bg-color);
+    font-size: 33px;
+}
+.showcase .header .links .li{
+    display: flex;
+}
+.showcase .header .links .li li{
+    list-style-type: none;
+}
+.showcase .header .links .li li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.showcase .header .links .li li a:hover{
+    color: var(--bg-color);
+}
+/* bod */
+.body{
+    position: relative;
+
+}
+.body .content{
+    text-align: center;
+    color: white;
+    margin-top: 10rem;
+}
+.body .content h3{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.body .content h1{
+    font-size: 40px;
+}
+.body .content .button a button{
+    margin-top: 2rem;
+    border-radius: 20px;
+    padding: 10px 40px;
+    background-color: var(--bg-color);
+    border: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.body .content .button a button:hover{
+    width: 200px;
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+.bo{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    position: relative;
+}
+.body .content .bo a div{
+    background-color: #dedd;
+    width: 60px;
+    height: 1px;
+}
+.body .content .scrol{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.body .content .scrol .s1{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+}
+.body .content .scrol .s2{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+.body .content .scrol a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+.about{
+    background-color: rgb(250, 248, 248);
+}
+.about .title{
+   text-align: center;
+   margin-top: 7rem;
+}
+.about .title div{
+    background-color: black;
+    width: 90px;
+    height: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 47%;
+    margin-top: 20px;
+}
+.about .content{
+    display: flex;
+    gap: 40px;
+
+}
+.about .content .texts h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about .content .image img{
+    width: 450px;
+    height: 300px;
+
+}
+.about .content .texts .line-height{
+    line-height: 35px;
+    margin-top: 20px;
+}
+.about .content .texts .line-height span{
+    color: var(--bg-color);
+    margin-right: 15px;
+}
+/* Services */
+.services{
+    margin-top: 7rem;
+}
+.services .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin: 2rem 0;
+    
+}
+.services .boxes .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    /* border: 1px solid #dddd; */
+    text-align: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+.services .boxes .box span{
+    margin-bottom: 15px;
+}
+.services .boxes .box h3{
+    margin-bottom: 15px;
+}
+.services .boxes .box p{
+    text-align: justify;
+    text-align-last: center;
+}
+.services .boxes .box .de{
+    color: var(--bg-color);
+}
+
+.services .ti{
+    text-align: center;
+   margin-top: 7rem;
+}
+.services .ti div{
+    background-color: black;
+    width: 90px;
+    height: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 46%;
+    margin-top: 20px;
+}
+
+/* port folio */
+
+.portfolio{
+    margin-top: 7rem;
+}
+.portfolio .boxes .box .ab{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    padding: 7px;
+    top: 40%;
+    right: 60%;
+    opacity: 0.5;
+}
+.portfolio .boxes .box .ab1{
+    position: absolute;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    padding: 7px;
+    top: 40%;
+    right: 45%;
+    opacity: 0.5;
+}
+.portfolio .boxes .box .ab2{
+    position: absolute;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50px;
+    padding: 7px;
+    top: 40%;
+    right: 30%;
+    opacity: 0.5;
+}
+.portfolio .title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.portfolio .title div{
+    background-color: black;
+    width: 90px;
+    height: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 46%;
+    margin-top: 20px;
+}
+.portfolio .boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 20px;
+}
+.portfolio .boxes .box{
+    border: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+}
+.portfolio .boxes .box h3{
+    margin-top: 10px;
+}
+.portfolio .boxes .box p{
+    margin-bottom: 10px;
+}
+.portfolio .boxes .box div img{
+    width: 270px;
+    height: 370px;
+    transition: all 0.5s ease-in-out;
+}
+.portfolio .boxes .box div img:hover{
+    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.5);
+}
